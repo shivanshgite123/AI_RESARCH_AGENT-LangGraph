@@ -45,11 +45,11 @@ ai-research-tracker/
 ├── .env.example
 └── README.md
 ```
-##  Project Structure
+## Project Structure
 
 | File | Description |
 |------|------------|
-| `app/main.py | FastAPI with CORS, Pydantic models, proper error handling |
+| `app/main.py` | FastAPI with CORS, Pydantic models, proper error handling |
 | `app/graph.py` | LangGraph workflow with `build_graph()` factory function |
 | `app/state.py` | AgentState with Optional types |
 | `app/nodes/router.py` | Smart routing with 10+ keyword triggers |
