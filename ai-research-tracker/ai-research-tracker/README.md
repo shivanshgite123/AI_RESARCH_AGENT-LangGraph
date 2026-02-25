@@ -45,8 +45,16 @@ ai-research-tracker/
 ├── .env.example
 └── README.md
 ```
-
-
+File                                           Description
+app/main.py                 FastAPI with CORS, Pydantic models, proper error handling
+app/graph.py                LangGraph workflow with build_graph() factory function
+app/state.py                AgentState with Optional types
+app/nodes/router.py         Smart routing with 10+ keyword triggers
+app/nodes/rag.py            ChromaDB retrieval with error handling
+app/nodes/websearch.py      Tavily search with structured result formatting
+app/nodes/generate.py       Gemini prompt with clear instructions & source labeling
+app/services/gemini.py      LLM client with lazy init
+app/services/vectorstore.py ChromaDB + Gemini embeddings + 5 seed research docs
 
 ##  Setup
 
