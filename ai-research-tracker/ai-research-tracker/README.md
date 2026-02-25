@@ -1,10 +1,10 @@
-# 🚀 AI Research Tracker
+#  AI Research Tracker
 
 A **LangGraph + Gemini RAG System** that intelligently answers AI research questions by routing between a local vector database and real-time web search.
 
----
 
-## 🧠 Architecture
+
+##  Architecture
 
 ```
 User → FastAPI → LangGraph Workflow
@@ -23,9 +23,9 @@ User → FastAPI → LangGraph Workflow
 - Questions with keywords like `latest`, `2024`, `2025`, `2026`, `current`, `news` → **Web Search**
 - All other questions → **RAG (Vector Store)**
 
----
 
-## 📁 Folder Structure
+
+##  Folder Structure
 
 ```
 ai-research-tracker/
@@ -46,9 +46,9 @@ ai-research-tracker/
 └── README.md
 ```
 
----
 
-## ⚙️ Setup
+
+##  Setup
 
 ### 1. Clone & Install
 
@@ -83,9 +83,9 @@ API available at: `http://localhost:8000`
 
 Interactive docs: `http://localhost:8000/docs`
 
----
 
-## 🧪 API Usage
+
+##  API Usage
 
 ### POST `/chat`
 
@@ -114,9 +114,9 @@ curl -X POST "http://localhost:8000/chat" \
 
 This will route to **web search** (due to "latest" and "2026" keywords).
 
----
 
-## 📦 Pre-loaded Research Documents
+
+##  Pre-loaded Research Documents
 
 The vector store comes pre-seeded with summaries on:
 - Transformer architecture (Vaswani et al., 2017)
@@ -125,11 +125,7 @@ The vector store comes pre-seeded with summaries on:
 - GPT-4 (OpenAI, 2023)
 - BERT (Devlin et al., 2018)
 
----
 
-## 🔑 Environment Variables
 
-| Variable | Description |
-|----------|-------------|
 | `GOOGLE_API_KEY` | Google Gemini API key |
 | `TAVILY_API_KEY` | Tavily Search API key |
